@@ -20,7 +20,7 @@ public class ServerTests
     {
         var result = Server.GetCount();
         
-        Assert.That(0, Is.EqualTo(result));
+        Assert.That(result, Is.EqualTo(0));
     }
     
     [Test]
@@ -31,7 +31,7 @@ public class ServerTests
         Server.AddToCount(valueToIncrease);
         var countOnServer = Server.GetCount();
         
-        Assert.That(valueToIncrease, Is.EqualTo(countOnServer));
+        Assert.That(countOnServer, Is.EqualTo(valueToIncrease));
     }
     
     [Test]
@@ -47,5 +47,23 @@ public class ServerTests
         var countOnServer = Server.GetCount();
 
         Assert.That(countOnServer, Is.EqualTo(writersCount));
+    }
+    
+    [Test]
+    public void Reader_GetCountWhileWritingDoesNotThrow()
+    {
+        Parallel.For(0, 1000, i =>
+        {
+            if (i % 2 == 0)
+            {
+                Server.AddToCount(1);
+            }
+            else
+            {
+                Server.GetCount();
+            }
+        });
+
+        Assert.Pass();
     }
 }
