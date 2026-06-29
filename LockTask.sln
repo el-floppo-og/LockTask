@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockTask.Core", "LockTask.Core\LockTask.Core.csproj", "{EC0A2475-0653-4A1C-AA45-7B822010F402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockTask.Tests", "LockTask.Tests\LockTask.Tests.csproj", "{60270531-D276-41C6-8D12-F8A6215A4CBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC0A2475-0653-4A1C-AA45-7B822010F402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0A2475-0653-4A1C-AA45-7B822010F402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0A2475-0653-4A1C-AA45-7B822010F402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0A2475-0653-4A1C-AA45-7B822010F402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60270531-D276-41C6-8D12-F8A6215A4CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60270531-D276-41C6-8D12-F8A6215A4CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60270531-D276-41C6-8D12-F8A6215A4CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60270531-D276-41C6-8D12-F8A6215A4CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
